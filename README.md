@@ -91,8 +91,8 @@ Only the user configured as `adminID` can use commands.
 
 | Command | Aliases | Description |
 | --- | --- | --- |
-| `.başlat` | `.baslat`, `.start` | Starts or resumes automatic messages. |
-| `.durdur` | `.stop` | Stops automatic messages. |
+| `.start` | `.strt` | Starts or resumes automatic messages. |
+| `.stop` | `.stp` | Stops automatic messages. |
 
 If you change the `prefix` value in `config.json`, replace `.` with your selected prefix.
 
