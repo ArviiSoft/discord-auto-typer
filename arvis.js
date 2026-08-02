@@ -22,7 +22,7 @@ const state = {
     startedAt: Date.now(),
     logs: [],
     lastLogs: [],
-    totalAccounts: config.TOKENLER.length,
+    totalAccounts: config.TOKENS.length,
     loginAttemptsFinished: 0,
     activeAccounts: 0,
     invalidAccounts: 0,
@@ -438,7 +438,7 @@ process.stdout.write(`${ANSI.hideCursor}${ANSI.clear}${ANSI.cursorHome}`);
 addLog("INFO", "Dashboard initialized");
 addLog("SUCCESS", "Runtime monitors online");
 addLog("INFO", "Waiting for account activity");
-addLog("INFO", `Starting login for ${config.TOKENLER.length} accounts...`);
+addLog("INFO", `Starting login for ${config.TOKETOKENSNLER.length} accounts...`);
 addLog("INFO", `${commands.size} command entries loaded.`);
 setInterval(renderDashboard, 1000);
 
@@ -450,12 +450,12 @@ if (!config.adminID) {
     addLastLog("WARN", "adminID is empty in config.json.");
 }
 
-if (config.TOKENLER.length === 0) {
+if (config.TOKENS.length === 0) {
     addLog("ERROR", "No tokens found in config.json.");
 }
 
-for (let index = 0; index < config.TOKENLER.length; index++) {
-    const token = config.TOKENLER[index];
+for (let index = 0; index < config.TOKENS.length; index++) {
+    const token = config.TOKENS[index];
     const client = new Client({ checkUpdate: false });
     const isMainClient = index === 0;
     let autoMessagesStarted = false;

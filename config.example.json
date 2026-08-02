@@ -1,7 +1,7 @@
 {
     "MESSAGE_SENT_DURATION": 600000,
     "CHANNEL_ID": "YOUR_CHANNEL_ID",
-    "TOKENLER": [
+    "TOKENS": [
         "YOUR_TOKEN_HERE"
     ],
 
