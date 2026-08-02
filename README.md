@@ -111,15 +111,3 @@ If you change the `prefix` value in `config.json`, replace `.` with your selecte
 ├── package-lock.json
 └── start.bat
 ```
-
-## Security Notes
-
-- Do not upload real tokens to GitHub.
-- `config.json` is listed in `.gitignore` and should stay private.
-- Share `config.example.json`, not your real config file.
-- If a token is exposed, reset it immediately.
-- Use a reasonable message interval and respect server rules.
-
-## License
-
-MIT
