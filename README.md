@@ -1,5 +1,5 @@
 # Auto Typer
-<img width="899" height="429" alt="resim" src="https://github.com/user-attachments/assets/3e9fcba4-9edd-4640-81ba-b18725b44ba5" />
+<img width="899" height="429" alt="Auto Typer dashboard" src="https://github.com/user-attachments/assets/3e9fcba4-9edd-4640-81ba-b18725b44ba5" />
 
 Auto Typer is a simple Discord auto typer/selfbot project that sends messages to a selected channel at a configurable interval. It can send one fixed message or generate short random messages through `generator.js`.
 
@@ -83,7 +83,7 @@ npm test
 On Windows, you can also run:
 
 ```bat
-başlat.bat
+start.bat
 ```
 
 ## Commands
@@ -109,7 +109,7 @@ If you change the `prefix` value in `config.json`, replace `.` with your selecte
 ├── config.example.json
 ├── package.json
 ├── package-lock.json
-└── başlat.bat
+└── start.bat
 ```
 
 ## Security Notes
