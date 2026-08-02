@@ -193,7 +193,7 @@ function renderDashboard() {
             renderChip("Status", status, getStatusColor(status)),
             renderChip("Accounts", `${state.activeAccounts}/${state.totalAccounts}`, ANSI.cyan),
             renderChip("Mode", getMessageMode(), ANSI.cyan),
-            renderChip("Interval", formatDuration(config.MESAJ_GONDERIM_SURESI), ANSI.green),
+            renderChip("Interval", formatDuration(config.MESSAGE_SENT_DURATION), ANSI.green),
         ].join("   "),
     ];
     const statsLines = [
@@ -412,7 +412,7 @@ function startAutoMessage(client) {
     };
 
     sendAutomaticMessage();
-    setInterval(sendAutomaticMessage, config.MESAJ_GONDERIM_SURESI);
+    setInterval(sendAutomaticMessage, config.MESSAGE_SENT_DURATION);
 }
 
 function cleanupTerminal() {

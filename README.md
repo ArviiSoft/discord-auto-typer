@@ -38,7 +38,7 @@ Then edit `config.json` with your own values.
 
 ```json
 {
-    "MESAJ_GONDERIM_SURESI": 600000,
+    "MESSAGE_SENT_DURATION": 600000,
     "CHANNEL_ID": "YOUR_CHANNEL_ID",
     "TOKENLER": [
         "YOUR_TOKEN_HERE"
@@ -54,7 +54,7 @@ Then edit `config.json` with your own values.
 
 | Key | Description |
 | --- | --- |
-| `MESAJ_GONDERIM_SURESI` | Message interval in milliseconds. `600000` equals 10 minutes. |
+| `MESSAGE_SENT_DURATION` | Message interval in milliseconds. `600000` equals 10 minutes. |
 | `CHANNEL_ID` | The Discord channel ID where messages will be sent. |
 | `TOKENLER` | List of account tokens. Keep these private. |
 | `message` | The fixed message used when `onlyonemessage` is enabled. |
