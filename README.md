@@ -91,8 +91,8 @@ Only the user configured as `adminID` can use commands.
 
 | Command | Aliases | Description |
 | --- | --- | --- |
-| `.başlat` | `.baslat`, `.start` | Starts or resumes automatic messages. |
-| `.durdur` | `.stop` | Stops automatic messages. |
+| `.start` | `.strt` | Starts or resumes automatic messages. |
+| `.stop` | `.stp` | Stops automatic messages. |
 
 If you change the `prefix` value in `config.json`, replace `.` with your selected prefix.
 
@@ -110,3 +110,15 @@ If you change the `prefix` value in `config.json`, replace `.` with your selecte
 ├── package-lock.json
 └── başlat.bat
 ```
+
+## Security Notes
+
+- Do not upload real tokens to GitHub.
+- `config.json` is listed in `.gitignore` and should stay private.
+- Share `config.example.json`, not your real config file.
+- If a token is exposed, reset it immediately.
+- Use a reasonable message interval and respect server rules.
+
+## License
+
+MIT
