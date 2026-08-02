@@ -1,0 +1,16 @@
+{
+  "name": "auto-typer",
+  "version": "1.0.0",
+  "description": "Auto Typer Selfbot",
+  "main": "arvis.js",
+  "scripts": {
+    "test": "node --check arvis.js && node --check generator.js",
+    "start": "node arvis.js"
+  },
+  "author": "arviis.",
+  "license": "ISC",
+  "dependencies": {
+    "discord.js-selfbot-v13": "^3.1.4",
+    "nodemon": "^3.1.3"
+  }
+}
