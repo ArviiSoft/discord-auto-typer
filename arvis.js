@@ -438,7 +438,7 @@ process.stdout.write(`${ANSI.hideCursor}${ANSI.clear}${ANSI.cursorHome}`);
 addLog("INFO", "Dashboard initialized");
 addLog("SUCCESS", "Runtime monitors online");
 addLog("INFO", "Waiting for account activity");
-addLog("INFO", `Starting login for ${config.TOKETOKENSNLER.length} accounts...`);
+addLog("INFO", `Starting login for ${config.TOKENS.length} accounts...`);
 addLog("INFO", `${commands.size} command entries loaded.`);
 setInterval(renderDashboard, 1000);
 
